@@ -17,5 +17,5 @@ window.onload = () => {
   
     const total = (Petrol_Price * liters).toFixed(2);
     document.querySelector('#totalAmount').innerText = `${total}`;
-  }
+}
   
