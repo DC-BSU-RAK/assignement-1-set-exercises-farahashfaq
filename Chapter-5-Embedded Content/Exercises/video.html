@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Embedded Video</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #1e1e1e, #111);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #eee;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffffcc;
+    }
+
+    video {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Beautiful Video</h1>
+    <video controls autoplay loop poster="poster-image.jpg">
+      <source src="my-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>
