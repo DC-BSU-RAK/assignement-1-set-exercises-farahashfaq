@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4e300d;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #e9a40ee0;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  figure {
+    background: #c4942f;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(105, 83, 83, 0.1);
+    max-width: 400px;
+    transition: transform 0.3s ease;
+  }
+  
+  figure:hover {
+    transform: scale(1.03);
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(70%) contrast(120%);
+    transition: filter 0.2s ease;
+  }
+  
+  img:hover {
+    filter: grayscale(3%) contrast(120%);
+  }
+  
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #dacbcb;
+  }
+  
